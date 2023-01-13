@@ -1,6 +1,7 @@
 // TODO: Include packages needed for this application
 const inquirerMod = require("inquirer");
 const fileMod = require("fs");
+const generateMarkdown = require("./utils/generateMarkdown")
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -58,19 +59,19 @@ const questions = [
   }];
 
 // TODO: Create a function to write README file
+function writeToFile(fileName, data) {
 
+  fileMod.writeFile(fileName, JSON.stringify(data, null, "\t"), (err) =>
+    err ? console.log(err) : console.log("Success!")
+    );
+}
 
 // TODO: Create a function to initialize app
 function init() {
   inquirerMod.prompt(questions)
   .then(function (data) {
-    function writeToFile(fileName, data) {
-      const readMeFile = "LISEZMOI.md";
-    
-      fileMod.writeFile(readMeFile, JSON.stringify(data, null, "\t"), (err) =>
-        err ? console.log(err) : console.log("Success!")
-        );
-    }
+    const readMeFile = "LISEZMOI.md";
+    writeToFile(readMeFile, generateMarkdown({...data}));
   })
 }
 
