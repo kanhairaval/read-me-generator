@@ -3,11 +3,15 @@
 function renderLicenseBadge(license) {
   const badges = {
     mit: "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]",
-    isc: "",
-    gpl: "",
-    ncsa: "",
-    None: ""
+    isc: "[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)]",
+    gpl: "[![GPL license](https://img.shields.io/badge/License-GPL-blue.svg)]",
+    gnu: "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)]",
+    None: "[![Generic badge](https://img.shields.io/badge/<No>-<License>-<COLOR>.svg)]"
   };
+
+  if (data.license === "isc") {
+    
+  } else if (data.license === "isc") {}
 }
 
 // TODO: Create a function that returns the license link
