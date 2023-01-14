@@ -1,7 +1,13 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-
+  const badges = {
+    mit: "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]",
+    isc: "",
+    gpl: "",
+    ncsa: "",
+    None: ""
+  };
 }
 
 // TODO: Create a function that returns the license link
@@ -17,7 +23,13 @@ function generateMarkdown(data) {
   return `# ${data.title}
 
   ## Table of Content
-  - ${data.content}
+  - [Project description] (#Description)
+  - [Installation] (#Installation)
+  - [Usage] (#Usage)
+  - [License] (#License)
+  - [Contributors] (#Contributors)
+  - [Testing] (#Testing)
+  - [Questions] (#Questions)
 
   ## Description
   ${data.description}
@@ -31,16 +43,14 @@ function generateMarkdown(data) {
   ## License
   ${data.license}
 
-  ## Contributors
+  ## Contribution
   ${data.contributors}
 
   ## Testing
   ${data.testing}
 
-  ## Github
-  ${data.username}
-
-  ## Contact Info
+  ## Questions
+  ${data.username}\n
   ${data.email}
 `;
 }

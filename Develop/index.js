@@ -14,13 +14,7 @@ const questions = [
     type: "input",
     name: "description",
     message: "Please, provide a brief description of the project?"
-  }, 
-  {
-    type: "checkbox",
-    name: "content",
-    message: "What is the table of content?",
-    choices: ["Description", "Installation", "Usage", "License", "Contrubutors'", "Testing", "GitHub", "Contact"]
-  }, 
+  },
   {
     type: "input",
     name: "installation",
@@ -35,12 +29,12 @@ const questions = [
     type: "list",
     name: "license",
     message: "What kind of license have you used?",
-    choices: ["isc", "gpl", "mit", "ncsa", "No License"]
+    choices: ["isc", "gpl", "mit", "ncsa", "None"]
   }, 
   {
     type: "input",
     name:"contributors",
-    message: "Who are the contributors?"
+    message: "How do I contribute to this project?"
   }, 
   {
     type: "input",
@@ -61,7 +55,7 @@ const questions = [
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
 
-  fileMod.writeFile(fileName, generateMarkdown(), (err) =>
+  fileMod.writeFile(fileName, data, (err) =>
     err ? console.log(err) : console.log("Success!")
     );
 }
@@ -70,8 +64,8 @@ function writeToFile(fileName, data) {
 function init() {
   inquirerMod.prompt(questions)
   .then(function (data) {
-    const readMeFile = "LISEZMOI.md";
-    writeToFile(readMeFile, generateMarkdown({...data}));
+    const lisezMoi = "./README.md";
+    writeToFile(lisezMoi, generateMarkdown(data));
   })
 }
 
