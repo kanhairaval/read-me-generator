@@ -9,9 +9,7 @@ function renderLicenseBadge(license) {
     None: "[![Generic badge](https://img.shields.io/badge/<No>-<License>-<COLOR>.svg)]"
   };
 
-  if (data.license === "isc") {
-    
-  } else if (data.license === "isc") {}
+  return badges(license);
 }
 
 // TODO: Create a function that returns the license link
@@ -25,6 +23,8 @@ function renderLicenseSection(license) {}
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
+
+  ${this.renderLicenseBadge(data.license)}
 
   ## Table of Content
   - [Project description] (#Description)
