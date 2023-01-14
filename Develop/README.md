@@ -1,6 +1,4 @@
-# test
-
-  renderLicenseBadge(undefined)
+# test renderLicenseBadge(license)
 
   ## Table of Content
   - [Project description](#Description)
@@ -15,9 +13,9 @@
   test
 
   ## Installation
-  undefined
+  test
 
-  ##Usage
+  ## Usage
   test
 
   ## License

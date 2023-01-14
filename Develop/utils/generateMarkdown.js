@@ -22,19 +22,34 @@ function renderLicenseBadge(license) {
   }
 }
 
+renderLicenseBadge(${data.license.badges});
+
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {}
+function renderLicenseLink(license) {
+  const licenseLink = {
+    mit: "(https://opensource.org/licenses/MIT)",
+    isc: "(https://opensource.org/licenses/ISC)",
+    gpl: "(http://perso.crans.org/besson/LICENSE.html)",
+    gnu: "(https://www.gnu.org/licenses/gpl-3.0)"
+  };
+}
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {}
+function renderLicenseSection(license) {
+  if (data.license === "none") {
+    return `No license has been selected`
+  } else {
+    return `This project is licensed under ${data.license}`
+  }
+}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
-
-  renderLicenseBadge(${this.badges})
+  
+  
 
   ## Table of Content
   - [Project description](#Description)
@@ -49,13 +64,13 @@ function generateMarkdown(data) {
   ${data.description}
 
   ## Installation
-  ${data.installaion}
+  ${data.installation}
 
-  ##Usage
+  ## Usage
   ${data.usage}
 
   ## License
-  ${data.license}
+  ${data.license}\n
 
   ## Contribution
   ${data.contributors}
