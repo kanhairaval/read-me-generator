@@ -6,10 +6,20 @@ function renderLicenseBadge(license) {
     isc: "[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)]",
     gpl: "[![GPL license](https://img.shields.io/badge/License-GPL-blue.svg)]",
     gnu: "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)]",
-    None: "[![Generic badge](https://img.shields.io/badge/<No>-<License>-<COLOR>.svg)]"
+    none: "[![Generic badge](https://img.shields.io/badge/<No>-<License>-<COLOR>.svg)]"
   };
 
-  return badges(license);
+  if (data.license === "isc") {
+    return badges.isc
+  } else if (data.license === "gpl") {
+    return badges.gpl
+  } else if (data.license === "mit") {
+    return badges.mit
+  } else if (data.license === "gnu gpl v3") {
+    return badges.gnu
+  } else {
+    return badges.none
+  }
 }
 
 // TODO: Create a function that returns the license link
@@ -24,16 +34,16 @@ function renderLicenseSection(license) {}
 function generateMarkdown(data) {
   return `# ${data.title}
 
-  ${this.renderLicenseBadge(data.license)}
+  renderLicenseBadge(${this.badges})
 
   ## Table of Content
-  - [Project description] (#Description)
-  - [Installation] (#Installation)
-  - [Usage] (#Usage)
-  - [License] (#License)
-  - [Contributors] (#Contributors)
-  - [Testing] (#Testing)
-  - [Questions] (#Questions)
+  - [Project description](#Description)
+  - [Installation](#Installation)
+  - [Usage](#Usage)
+  - [License](#License)
+  - [Contributors](#Contributors)
+  - [Testing](#Testing)
+  - [Questions](#Questions)
 
   ## Description
   ${data.description}

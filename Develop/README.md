@@ -1,13 +1,15 @@
 # test
 
+  renderLicenseBadge(undefined)
+
   ## Table of Content
-  - [Project description] (#Description)
-  - [Installation] (#Installation)
-  - [Usage] (#Usage)
-  - [License] (#License)
-  - [Contributors] (#Contributors)
-  - [Testing] (#Testing)
-  - [Questions] (#Questions)
+  - [Project description](#Description)
+  - [Installation](#Installation)
+  - [Usage](#Usage)
+  - [License](#License)
+  - [Contributors](#Contributors)
+  - [Testing](#Testing)
+  - [Questions](#Questions)
 
   ## Description
   test
