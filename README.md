@@ -1,6 +1,6 @@
 # README Generator - KR
 
-  ![Generic badge](https://img.shields.io/badge/No-License-<COLOR>.svg)
+  ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 
   ## Table of Content
@@ -29,9 +29,9 @@
 
   ## License
   MIT
-  ![Generic badge](https://img.shields.io/badge/No-License-<COLOR>.svg)
+  ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
-  
+  https://opensource.org/licenses/MIT
 
   No license has been selected.
 
@@ -41,4 +41,4 @@
   kanhairaval@gmail.com
 
   ## Demo
-  
+

@@ -9,13 +9,13 @@ function renderLicenseBadge(license) {
     none: "![Generic badge](https://img.shields.io/badge/No-License-<COLOR>.svg)"
   }
 
-  if (license === "isc") {
+  if (license === "ISC") {
     return badges.isc
-  } else if (license === "gpl") {
+  } else if (license === "GPL") {
     return badges.gpl
-  } else if (license === "mit") {
+  } else if (license === "MIT") {
     return badges.mit
-  } else if (license === "gnu gpl v3") {
+  } else if (license === "GNU GPL V3") {
     return badges.gnu
   } else {
     return badges.none
@@ -32,13 +32,13 @@ function renderLicenseLink(license) {
     gnu: "https://www.gnu.org/licenses/gpl-3.0"
   }
 
-  if (license === "isc") {
+  if (license === "ISC") {
     return licenseLink.isc
-  } else if (license === "gpl") {
+  } else if (license === "GPL") {
     return licenseLink.gpl
-  } else if (license === "mit") {
+  } else if (license === "MIT") {
     return licenseLink.mit
-  } else if (license === "gnu gpl v3") {
+  } else if (license === "GNU GPL V3") {
     return licenseLink.gnu
   } else {
     return "";
@@ -112,7 +112,7 @@ function generateMarkdown(data) {
   ${data.email}
 
   ## Demo
-  
+
 `;
 }
 
