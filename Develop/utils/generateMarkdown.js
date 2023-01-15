@@ -2,11 +2,11 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   const badges = {
-    mit: "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]",
-    isc: "[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)]",
-    gpl: "[![GPL license](https://img.shields.io/badge/License-GPL-blue.svg)]",
-    gnu: "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)]",
-    none: "[![Generic badge](https://img.shields.io/badge/<No>-<License>-<COLOR>.svg)]"
+    mit: "![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)",
+    isc: "![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)",
+    gpl: "![GPL license](https://img.shields.io/badge/License-GPL-blue.svg)",
+    gnu: "![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)",
+    none: "![Generic badge](https://img.shields.io/badge/<No>-<License>-<COLOR>.svg)"
   }
 
   if (license === "isc") {
@@ -26,10 +26,10 @@ function renderLicenseBadge(license) {
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   const licenseLink = {
-    mit: "(https://opensource.org/licenses/MIT)",
-    isc: "(https://opensource.org/licenses/ISC)",
-    gpl: "(http://perso.crans.org/besson/LICENSE.html)",
-    gnu: "(https://www.gnu.org/licenses/gpl-3.0)"
+    mit: "https://opensource.org/licenses/MIT",
+    isc: "https://opensource.org/licenses/ISC",
+    gpl: "http://perso.crans.org/besson/LICENSE.html",
+    gnu: "https://www.gnu.org/licenses/gpl-3.0"
   }
 
   if (license === "isc") {

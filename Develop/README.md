@@ -1,6 +1,6 @@
-# what
+# Project Title
 
-  [![GPL license](https://img.shields.io/badge/License-GPL-blue.svg)]
+  ![Generic badge](https://img.shields.io/badge/<No>-<License>-<COLOR>.svg)
 
 
   ## Table of Content
@@ -13,29 +13,29 @@
   - [Questions](#Questions)
 
   ## Description
-  say what
+  Project Description
 
   ## Installation
-  say what what
+  Install
 
   ## Usage
-  colour me mime
+  Use
 
   ## Contribution
-  some peno
+  Don't
 
   ## Testing
-  say what
+  None
 
   ## License
-  gpl
-  [![GPL license](https://img.shields.io/badge/License-GPL-blue.svg)]
+  None
+  ![Generic badge](https://img.shields.io/badge/<No>-<License>-<COLOR>.svg)
 
-  (http://perso.crans.org/besson/LICENSE.html)
+  undefined
 
-  This project is licensed underGPL.
+  No license has been selected.
 
   ## Questions
-  say what whayt
+  Username
 
-  what
+  Email
