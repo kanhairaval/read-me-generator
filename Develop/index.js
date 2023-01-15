@@ -29,7 +29,7 @@ const questions = [
     type: "list",
     name: "license",
     message: "What kind of license have you used?",
-    choices: ["isc", "gpl", "mit", "gnu gpl v3", "None"]
+    choices: ["ISC", "GPL", "MIT", "GNU GPL V3", "None"]
   }, 
   {
     type: "input",
@@ -64,7 +64,7 @@ function writeToFile(fileName, data) {
 function init() {
   inquirerMod.prompt(questions)
   .then(function (data) {
-    const lisezMoi = "./README.md";
+    const lisezMoi = "../README.md";
     writeToFile(lisezMoi, generateMarkdown(data));
   })
 }

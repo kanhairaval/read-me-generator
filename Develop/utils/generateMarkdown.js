@@ -6,7 +6,7 @@ function renderLicenseBadge(license) {
     isc: "![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)",
     gpl: "![GPL license](https://img.shields.io/badge/License-GPL-blue.svg)",
     gnu: "![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)",
-    none: "![Generic badge](https://img.shields.io/badge/<No>-<License>-<COLOR>.svg)"
+    none: "![Generic badge](https://img.shields.io/badge/No-License-<COLOR>.svg)"
   }
 
   if (license === "isc") {
