@@ -1,4 +1,4 @@
-# test
+# README Generator - KR
 
   ![Generic badge](https://img.shields.io/badge/No-License-<COLOR>.svg)
 
@@ -7,35 +7,38 @@
   - [Project description](#Description)
   - [Installation](#Installation)
   - [Usage](#Usage)
-  - [Contributors](#Contributors)
+  - [Contributors](#How-to-contribute)
   - [Testing](#Testing)
   - [License](#License)
   - [Questions](#Questions)
 
   ## Description
-  taste
+  This application uses nodejs modules to help users create a professional readme using the CLI interface.
 
   ## Installation
-  test of taste
+  Please, run npm init -y and than install the inquirer modle by typing npm i inquirer@8.2.4
 
   ## Usage
-  taste of test
+  Once, the inquirer module has been installed, all you need to do is to navigate to the develop folder and run node index.js
 
-  ## Contribution
-  Dude
+  ## How-to-contribute
+  Just navigate over to the questions section and conatct me to contribute.
 
   ## Testing
-  But that's like your opinion man
+  Well, as a test this entire README has been created using the CLI and the source code of this application, but feel free to clone or fork and do your own test.
 
   ## License
-  None
+  MIT
   ![Generic badge](https://img.shields.io/badge/No-License-<COLOR>.svg)
 
-  undefined
+  
 
   No license has been selected.
 
   ## Questions
-  Whatever
+  https://github.com/kanhairaval
 
-  Avada Kadavra
+  kanhairaval@gmail.com
+
+  ## Demo
+  

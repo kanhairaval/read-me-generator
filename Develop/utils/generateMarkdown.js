@@ -41,7 +41,7 @@ function renderLicenseLink(license) {
   } else if (license === "gnu gpl v3") {
     return licenseLink.gnu
   } else {
-    return;
+    return "";
   }
 }
 
@@ -81,7 +81,7 @@ function generateMarkdown(data) {
   - [Project description](#Description)
   - [Installation](#Installation)
   - [Usage](#Usage)
-  - [Contributors](#Contributors)
+  - [Contributors](#How-to-contribute)
   - [Testing](#Testing)
   - [License](#License)
   - [Questions](#Questions)
@@ -95,7 +95,7 @@ function generateMarkdown(data) {
   ## Usage
   ${data.usage}
 
-  ## Contribution
+  ## How-to-contribute
   ${data.contributors}
 
   ## Testing
@@ -110,6 +110,9 @@ function generateMarkdown(data) {
   ## Questions
   ${data.username}\n
   ${data.email}
+
+  ## Demo
+  
 `;
 }
 
