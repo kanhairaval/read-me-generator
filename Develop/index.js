@@ -64,7 +64,7 @@ function writeToFile(fileName, data) {
 function init() {
   inquirerMod.prompt(questions)
   .then(function (data) {
-    const lisezMoi = "../README.md";
+    const lisezMoi = "./README.md";
     writeToFile(lisezMoi, generateMarkdown(data));
   })
 }
