@@ -57,13 +57,13 @@ function renderLicenseSection(license) {
     none: "none"
   }
 
-  if (license === "isc") {
+  if (license === "ISC") {
     return `This project is licensed under ` + licenseSection.isc + `.`
-  } else if (license === "gpl") {
+  } else if (license === "GPL") {
     return `This project is licensed under ` + licenseSection.gpl + `.`
-  } else if (license === "mit") {
+  } else if (license === "MIT") {
     return `This project is licensed under ` + licenseSection.mit + `.`
-  } else if (license === "gnu gpl v3") {
+  } else if (license === "GNU GPL V3") {
     return `This project is licensed under ` + licenseSection.gnu + `.`
   } else {
     return "No license has been selected.";

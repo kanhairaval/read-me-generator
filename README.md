@@ -33,7 +33,7 @@
 
   https://opensource.org/licenses/MIT
 
-  No license has been selected.
+  This project is licensed under MIT.
 
   ## Questions
   https://github.com/kanhairaval
