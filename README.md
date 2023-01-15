@@ -11,6 +11,7 @@
   - [Testing](#Testing)
   - [License](#License)
   - [Questions](#Questions)
+  - [Demo](Demo)
 
   ## Description
   This application uses nodejs modules to help users create a professional readme using the CLI interface.
