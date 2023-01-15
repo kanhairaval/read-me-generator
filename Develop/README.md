@@ -1,33 +1,41 @@
-# test renderLicenseBadge(license)
+# what
+
+  [![GPL license](https://img.shields.io/badge/License-GPL-blue.svg)]
+
 
   ## Table of Content
   - [Project description](#Description)
   - [Installation](#Installation)
   - [Usage](#Usage)
-  - [License](#License)
   - [Contributors](#Contributors)
   - [Testing](#Testing)
+  - [License](#License)
   - [Questions](#Questions)
 
   ## Description
-  test
+  say what
 
   ## Installation
-  test
+  say what what
 
   ## Usage
-  test
-
-  ## License
-  mit
+  colour me mime
 
   ## Contribution
-  test
+  some peno
 
   ## Testing
-  test
+  say what
+
+  ## License
+  gpl
+  [![GPL license](https://img.shields.io/badge/License-GPL-blue.svg)]
+
+  (http://perso.crans.org/besson/LICENSE.html)
+
+  This project is licensed underGPL.
 
   ## Questions
-  test
+  say what whayt
 
-  test
+  what
